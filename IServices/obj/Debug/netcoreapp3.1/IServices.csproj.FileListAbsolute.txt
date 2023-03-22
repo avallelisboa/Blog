@@ -7,3 +7,4 @@ C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\net
 C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\netcoreapp3.1\IServices.csproj.CoreCompileInputs.cache
 C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\netcoreapp3.1\IServices.dll
 C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\netcoreapp3.1\IServices.pdb
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\netcoreapp3.1\IServices.csproj.AssemblyReference.cache

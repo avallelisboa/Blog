@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IDataAccess\\IDataAccess.csproj": {}
+    "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\Testing\\Testing.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IDataAccess\\IDataAccess.csproj": {
+    "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\Testing\\Testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IDataAccess\\IDataAccess.csproj",
-        "projectName": "IDataAccess",
-        "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IDataAccess\\IDataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\Testing\\Testing.csproj",
+        "projectName": "Testing",
+        "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\Testing\\Testing.csproj",
         "packagesPath": "C:\\Users\\avall\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IDataAccess\\obj\\",
+        "outputPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\Testing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,19 +43,17 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[16.5.0, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "NUnit": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[3.12.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[3.16.1, )"
             }
           },
           "imports": [

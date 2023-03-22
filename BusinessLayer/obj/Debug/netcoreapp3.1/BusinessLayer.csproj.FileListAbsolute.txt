@@ -7,3 +7,4 @@ C:\Users\avall\Documents\Andrés\Programación\Code\Blog\BusinessLayer\obj\Debug
 C:\Users\avall\Documents\Andrés\Programación\Code\Blog\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
 C:\Users\avall\Documents\Andrés\Programación\Code\Blog\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
 C:\Users\avall\Documents\Andrés\Programación\Code\Blog\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.AssemblyReference.cache
