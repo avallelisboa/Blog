@@ -1,0 +1,9 @@
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\bin\Debug\netcoreapp3.1\IServices.deps.json
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\bin\Debug\netcoreapp3.1\IServices.dll
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\bin\Debug\netcoreapp3.1\IServices.pdb
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\netcoreapp3.1\IServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\netcoreapp3.1\IServices.AssemblyInfoInputs.cache
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\netcoreapp3.1\IServices.AssemblyInfo.cs
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\netcoreapp3.1\IServices.csproj.CoreCompileInputs.cache
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\netcoreapp3.1\IServices.dll
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IServices\obj\Debug\netcoreapp3.1\IServices.pdb

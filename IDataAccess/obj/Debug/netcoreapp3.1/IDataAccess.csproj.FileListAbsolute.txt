@@ -1,0 +1,9 @@
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IDataAccess\bin\Debug\netcoreapp3.1\IDataAccess.deps.json
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IDataAccess\bin\Debug\netcoreapp3.1\IDataAccess.dll
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IDataAccess\bin\Debug\netcoreapp3.1\IDataAccess.pdb
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IDataAccess\obj\Debug\netcoreapp3.1\IDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IDataAccess\obj\Debug\netcoreapp3.1\IDataAccess.AssemblyInfoInputs.cache
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IDataAccess\obj\Debug\netcoreapp3.1\IDataAccess.AssemblyInfo.cs
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IDataAccess\obj\Debug\netcoreapp3.1\IDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IDataAccess\obj\Debug\netcoreapp3.1\IDataAccess.dll
+C:\Users\avall\Documents\Andrés\Programación\Code\Blog\IDataAccess\obj\Debug\netcoreapp3.1\IDataAccess.pdb

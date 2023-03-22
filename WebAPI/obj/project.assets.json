@@ -1,0 +1,125 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "IServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/IServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IServices.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "IServices": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IServices/1.0.0": {
+      "type": "project",
+      "path": "../IServices/IServices.csproj",
+      "msbuildProject": "../IServices/IServices.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "IServices >= 1.0.0",
+      "Services >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\avall\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\WebAPI\\WebAPI.csproj",
+      "projectName": "WebAPI",
+      "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\WebAPI\\WebAPI.csproj",
+      "packagesPath": "C:\\Users\\avall\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\WebAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\avall\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IServices\\IServices.csproj": {
+              "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IServices\\IServices.csproj"
+            },
+            "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\Services\\Services.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.25, 3.1.25]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
