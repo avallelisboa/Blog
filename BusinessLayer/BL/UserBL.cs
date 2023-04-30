@@ -6,7 +6,7 @@ using System.Text;
 
 namespace BusinessLayer.BL
 {
-    public class UserBL : EntityBL<User>
+    public class UserBL : EntityBL
     {
         private UserBL() { }
         private static UserBL _instance;
@@ -16,6 +16,76 @@ namespace BusinessLayer.BL
                 _instance = new UserBL();
 
             return _instance;
+        }
+        public EntityValidationResult validateId(int id)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+        public EntityValidationResult validateUserName(string userName)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+        public EntityValidationResult validatePassword(string userName)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+        public EntityValidationResult validateEmail(string userName)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+        public EntityValidationResult validateName(string userName)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+        public EntityValidationResult validateLastName(string userName)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+        public EntityValidationResult validateRole(string userName)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
         }
     }
 }

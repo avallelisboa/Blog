@@ -6,7 +6,7 @@ using System.Text;
 
 namespace BusinessLayer.BL
 {
-    public class PostBL : EntityBL<Post>
+    public class PostBL : EntityBL
     {
         private PostBL() { }
         private static PostBL _instance;
@@ -17,5 +17,56 @@ namespace BusinessLayer.BL
 
             return _instance;
         }
+        public EntityValidationResult validateId(int id)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+        public EntityValidationResult validateTitle(string title)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+        public EntityValidationResult validateContent(string content)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+        public EntityValidationResult validateWrittenDate(DateTime writtenDate)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+        public EntityValidationResult validateModifiedDate(DateTime modifiedDate)
+        {
+            EntityValidationResult aResult = new EntityValidationResult
+            {
+                IsValid = false,
+                Message = ""
+            };
+
+            return aResult;
+        }
+
     }
 }

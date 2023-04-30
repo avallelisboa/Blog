@@ -6,7 +6,7 @@ namespace BusinessLayer.DTOs
 {
     public class EntityValidationResult
     {
-        public bool isValid;
-        public string message;
+        public bool IsValid;
+        public string Message;
     }
 }

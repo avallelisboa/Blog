@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using IServices.DTOs.Request.Post;
+using IServices.IServices;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,36 +14,16 @@ namespace WebAPI.Controllers
     [ApiController]
     public class PostController : ControllerBase
     {
-        // GET: api/<PostController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IPostService _postService;
+        public PostController(IPostService thePostService)
         {
-            return new string[] { "value1", "value2" };
+            _postService = thePostService;
         }
-
-        // GET api/<PostController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<PostController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult addPost(AddPostRequest req)
         {
-        }
-
-        // PUT api/<PostController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<PostController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            var result = _postService.makePost(req);
+            return Ok(result);
         }
     }
 }
