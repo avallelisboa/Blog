@@ -16,5 +16,6 @@ namespace IDataAccess.DBObjects
         public DateTime WrittenDate { get; set; }
         public DateTime ModifiedDate { get; set; }
         public UserDB Author { get; set; }
+        public List<CategoryDB> Categories { get; set; }
     }
 }

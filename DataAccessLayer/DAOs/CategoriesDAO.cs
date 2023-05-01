@@ -1,5 +1,4 @@
 ﻿using IDataAccess.DBObjects;
-using IDataAccess.DTOs;
 using IDataAccess.IDAOs;
 using System;
 using System.Collections.Generic;
@@ -8,13 +7,13 @@ using System.Text;
 
 namespace DataAccessLayer.DAOs
 {
-    public class UserDAO : IUserDAO
+    public class CategoriesDAO : ICategoryDAO
     {
-        public void Add(UserDB theObject)
+        public void Add(CategoryDB theObject)
         {
             using (BlogDBContext db = new BlogDBContext())
             {
-                db.Users.Add(theObject);
+                db.Categories.Add(theObject);
             }
         }
 
@@ -22,29 +21,28 @@ namespace DataAccessLayer.DAOs
         {
             using (BlogDBContext db = new BlogDBContext())
             {
-                UserDB user = db.Users.First(u => u.Id == id);
-                db.Users.Remove(user);
+                CategoryDB cat = db.Categories.First(c => c.Id == id);
+                db.Categories.Remove(cat);
                 db.SaveChanges();
             }
         }
 
-        public UserDB Get(int id)
+        public CategoryDB Get(int id)
         {
             using (BlogDBContext db = new BlogDBContext())
             {
-                return db.Users.FirstOrDefault(u => u.Id == id);
+                return db.Categories.FirstOrDefault(c => c.Id == id);
             }
         }
 
-        public void Update(UserDB theObject)
+        public void Update(CategoryDB theObject)
         {
             using (BlogDBContext db = new BlogDBContext())
             {
-                UserDB user = db.Users.First(u => u.Id == theObject.Id);
+                CategoryDB cat = db.Categories.First(c => c.Id == theObject.Id);
 
-                user.Email = theObject.Email;
-                user.Name = theObject.Name;
-                user.UserName = theObject.UserName;
+                cat.Name = theObject.Name;
+                cat.Posts = theObject.Posts;
 
                 db.SaveChanges();
             }

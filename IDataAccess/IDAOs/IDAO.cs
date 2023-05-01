@@ -8,9 +8,9 @@ namespace IDataAccess.IDAOs
 {
     public interface IDAO<T> where T : class
     {
-        ActionResult Add(T theObject);
+        void Add(T theObject);
         T Get(int id);
-        ActionResult Update(T theObject);
-        ActionResult Delete(int id);
+        void Update(T theObject);
+        void Delete(int id);
     }
 }

@@ -3,30 +3,53 @@ using IDataAccess.DTOs;
 using IDataAccess.IDAOs;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace DataAccessLayer.DAOs
 {
     public class PostDAO : IPostDAO
     {
-        public ActionResult Add(PostDB theObject)
+        public void Add(PostDB theObject)
         {
-            throw new NotImplementedException();
+            using(BlogDBContext db = new BlogDBContext())
+            {
+                db.Posts.Add(theObject);
+            }
         }
 
-        public ActionResult Delete(int id)
+        public void Delete(int id)
         {
-            throw new NotImplementedException();
+            using (BlogDBContext db = new BlogDBContext())
+            {
+                PostDB post = db.Posts.First(p => p.Id == id);
+                db.Posts.Remove(post);
+                db.SaveChanges();
+            }
         }
 
         public PostDB Get(int id)
         {
-            throw new NotImplementedException();
+            using (BlogDBContext db = new BlogDBContext())
+            {
+                return db.Posts.FirstOrDefault(p => p.Id == id);
+            }
         }
 
-        public ActionResult Update(PostDB theObject)
+        public void Update(PostDB theObject)
         {
-            throw new NotImplementedException();
+            using (BlogDBContext db = new BlogDBContext())
+            {
+                PostDB post = db.Posts.First(p => p.Id == theObject.Id);
+
+                post.Title = theObject.Title;
+                post.Content = theObject.Content;
+                post.Author = theObject.Author;
+                post.Categories = theObject.Categories;
+                post.ModifiedDate = theObject.ModifiedDate;
+
+                db.SaveChanges();
+            }            
         }
     }
 }

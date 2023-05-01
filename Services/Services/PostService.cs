@@ -1,4 +1,5 @@
-﻿using IServices.DTOs.Response;
+﻿using IServices.DTOs.Request.Post;
+using IServices.DTOs.Response;
 using IServices.IServices;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace Services.Services
             throw new NotImplementedException();
         }
 
-        public ActionResult getPost()
+        public ActionResult getPost(int id)
         {
             throw new NotImplementedException();
         }
@@ -23,7 +24,7 @@ namespace Services.Services
             throw new NotImplementedException();
         }
 
-        public ActionResult makePost()
+        public ActionResult makePost(AddPostRequest req)
         {
             throw new NotImplementedException();
         }
