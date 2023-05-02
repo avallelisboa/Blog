@@ -1,5 +1,4 @@
 ﻿using IDataAccess.DBObjects;
-using IDataAccess.DTOs;
 using IDataAccess.IDAOs;
 using System;
 using System.Collections.Generic;
@@ -45,7 +44,7 @@ namespace DataAccessLayer.DAOs
                 post.Title = theObject.Title;
                 post.Content = theObject.Content;
                 post.Author = theObject.Author;
-                post.Categories = theObject.Categories;
+                post.PostCategories = theObject.PostCategories;
                 post.ModifiedDate = theObject.ModifiedDate;
 
                 db.SaveChanges();

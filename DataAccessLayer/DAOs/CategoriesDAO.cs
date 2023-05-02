@@ -42,7 +42,7 @@ namespace DataAccessLayer.DAOs
                 CategoryDB cat = db.Categories.First(c => c.Id == theObject.Id);
 
                 cat.Name = theObject.Name;
-                cat.Posts = theObject.Posts;
+                cat.PostCategories = theObject.PostCategories;
 
                 db.SaveChanges();
             }

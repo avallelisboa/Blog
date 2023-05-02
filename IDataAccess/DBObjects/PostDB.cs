@@ -7,7 +7,7 @@ using System.Text;
 namespace IDataAccess.DBObjects
 {
     [Table(name:"Post")]
-    public class PostDB : DBObject
+    public class PostDB :DBObject
     {
         [Key]
         public int Id { get; set; }
@@ -16,6 +16,6 @@ namespace IDataAccess.DBObjects
         public DateTime WrittenDate { get; set; }
         public DateTime ModifiedDate { get; set; }
         public UserDB Author { get; set; }
-        public List<CategoryDB> Categories { get; set; }
+        public List<PostCategoryDB> PostCategories { get; set; }
     }
 }
