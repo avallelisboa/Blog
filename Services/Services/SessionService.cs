@@ -1,4 +1,5 @@
-﻿using IServices.DTOs.Request.Session;
+﻿using IDataAccess.IDAOs;
+using IServices.DTOs.Request.Session;
 using IServices.DTOs.Response;
 using IServices.IServices;
 using System;
@@ -9,6 +10,11 @@ namespace Services.Services
 {
     public class SessionService : ISessionService
     {
+        private readonly IUserDAO _userDAO;
+        public SessionService(IUserDAO theUserDAO)
+        {
+            _userDAO = theUserDAO;
+        }
         public ActionResult login(LoginRequest theRequest)
         {
             throw new NotImplementedException();

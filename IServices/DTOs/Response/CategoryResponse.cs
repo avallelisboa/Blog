@@ -4,9 +4,8 @@ using System.Text;
 
 namespace IServices.DTOs.Response
 {
-    public class ActionResult
+    public class CategoryResponse : ActionResult
     {
-        public bool isValid;
-        public string message;
+        public string Name;
     }
 }

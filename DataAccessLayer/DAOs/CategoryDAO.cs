@@ -7,7 +7,7 @@ using System.Text;
 
 namespace DataAccessLayer.DAOs
 {
-    public class CategoriesDAO : ICategoryDAO
+    public class CategoryDAO : ICategoryDAO
     {
         public void Add(CategoryDB theObject)
         {

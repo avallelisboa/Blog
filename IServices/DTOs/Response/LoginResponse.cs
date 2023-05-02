@@ -4,9 +4,8 @@ using System.Text;
 
 namespace IServices.DTOs.Response
 {
-    public class ActionResult
+    public class LoginResponse : ActionResult
     {
-        public bool isValid;
-        public string message;
+        string AuthToken;
     }
 }

@@ -14,6 +14,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using IDataAccess.DBObjects;
+using IDataAccess.IDAOs;
+using DataAccessLayer.DAOs;
 
 namespace WebAPI
 {
@@ -36,6 +38,9 @@ namespace WebAPI
             services.AddScoped<ISessionService, SessionService>();
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IUserDAO, UserDAO>();
+            services.AddScoped<IPostDAO, PostDAO>();
+            services.AddScoped<ICategoryDAO, CategoryDAO>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
