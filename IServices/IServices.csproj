@@ -8,4 +8,8 @@
     <Folder Include="Containers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
+  </ItemGroup>
+
 </Project>

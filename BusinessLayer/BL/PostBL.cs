@@ -24,26 +24,32 @@ namespace BusinessLayer.BL
                 IsValid = false,
                 Message = ""
             };
+            aResult.IsValid = id > 0;
+            aResult.Message = !aResult.IsValid ? "The id must be higher than 0" : "";
 
             return aResult;
         }
-        public EntityValidationResult validateTitle(string title)
+        public EntityValidationResult validateTitle(string theTitle)
         {
             EntityValidationResult aResult = new EntityValidationResult
             {
                 IsValid = false,
                 Message = ""
             };
+            aResult.IsValid = theTitle.Length > 3 && theTitle.Length <= 30;
+            aResult.Message = !aResult.IsValid ? "The title must be between 3 and 30 characters" : "";
 
             return aResult;
         }
-        public EntityValidationResult validateContent(string content)
+        public EntityValidationResult validateContent(string theContent)
         {
             EntityValidationResult aResult = new EntityValidationResult
             {
                 IsValid = false,
                 Message = ""
             };
+            aResult.IsValid = theContent.Length > 10 && theContent.Length <= 10000;
+            aResult.Message = !aResult.IsValid ? "The content must be between 10 and 10000 characters" : "";
 
             return aResult;
         }
@@ -54,6 +60,8 @@ namespace BusinessLayer.BL
                 IsValid = false,
                 Message = ""
             };
+            aResult.IsValid = DateTime.Compare(writtenDate, DateTime.Now) <= 0;
+            aResult.Message = !aResult.IsValid ? "The date is not valid" : "";
 
             return aResult;
         }
@@ -64,6 +72,8 @@ namespace BusinessLayer.BL
                 IsValid = false,
                 Message = ""
             };
+            aResult.IsValid = DateTime.Compare(modifiedDate, DateTime.Now) <= 0;
+            aResult.Message = !aResult.IsValid ? "The date is not valid" : "";
 
             return aResult;
         }

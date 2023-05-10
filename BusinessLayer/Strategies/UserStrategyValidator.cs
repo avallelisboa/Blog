@@ -19,7 +19,6 @@ namespace BusinessLayer.Strategies
             user.AddValidationResult(userBL.validateName(user.Name));
             user.AddValidationResult(userBL.validateLastName(user.LastName));
             user.AddValidationResult(userBL.validatePassword(user.Password));
-            user.AddValidationResult(userBL.validateRole(user.Role));
         }
     }
 }
