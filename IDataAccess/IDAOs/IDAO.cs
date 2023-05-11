@@ -9,6 +9,7 @@ namespace IDataAccess.IDAOs
     {
         void Add(T theObject);
         T Get(int id);
+        List<T> GetAll();
         void Update(T theObject);
         void Delete(int id);
     }

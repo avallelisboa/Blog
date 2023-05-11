@@ -7,6 +7,18 @@ namespace BusinessLayer.Entities
 {
     public class User : Entity
     {
+        public User(int theId) : base("User")
+        {
+            Id = theId;
+        }
+        public User(
+            string userName, string email, string name,
+            string lastName, string password, string role
+        ) : base("User")
+        {
+            UserName = userName; Email = email; Name = name;
+            LastName = lastName; Password = password; Role = role;
+        }
         public User(
             int id, string userName, string email,string name,
             string lastName, string password, string role

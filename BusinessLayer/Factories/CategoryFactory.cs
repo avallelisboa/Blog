@@ -13,7 +13,10 @@ namespace BusinessLayer.Factories
         }
         public override Entity MakeValid(DBObject theObject)
         {
-            throw new NotImplementedException();
+            CategoryDB categoryDB = (CategoryDB)theObject;
+            Category category = new Category(categoryDB.Id, categoryDB.Name);
+
+            return category;
         }
      }
 }

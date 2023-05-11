@@ -6,6 +6,7 @@ namespace IServices.DTOs.Response
 {
     public class CategoryResponse : ActionResult
     {
+        public int Id;
         public string Name;
     }
 }

@@ -1,4 +1,7 @@
-﻿using IDataAccess.IDAOs;
+﻿using BusinessLayer.BL;
+using BusinessLayer.Entities;
+using BusinessLayer.Factories;
+using IDataAccess.IDAOs;
 using IServices.DTOs.Request.Session;
 using IServices.DTOs.Response;
 using IServices.IServices;
@@ -22,7 +25,26 @@ namespace Services.Services
 
         public ActionResult register(RegisterRequest theRequest)
         {
-            throw new NotImplementedException();
+            ActionResult result = new ActionResult();
+            User user = new User(theRequest.userName, theRequest.email, theRequest.name, theRequest.lastName, theRequest.password, theRequest.role);
+            var validationResult = UserBL.GetInstance().IsValid(user);
+            if (!validationResult.IsValid)
+            {
+                result.isValid = validationResult.IsValid;
+                result.message = validationResult.Message;
+                return result;
+            }
+            try
+            {
+                _userDAO.Add(DBObjectFactoryMethods.makeUserDB(user));
+            }catch(Exception ex)
+            {
+                result.isValid = false;
+                result.message = ex.Message;
+                return result;
+            }
+            result.message = "The user was registered correctly";
+            return result;
         }
     }
 }

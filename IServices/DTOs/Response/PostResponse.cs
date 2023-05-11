@@ -4,12 +4,12 @@ using System.Text;
 
 namespace IServices.DTOs.Response
 {
-    class PostResponse : ActionResult
+    public class PostResponse : ActionResult
     {
         public int Id;
         public string Tittle;
         public string Content;
-        public string[] Categories;
+        public List<CategoryResponse> Categories;
         public DateTime WrittenDate;
         public DateTime ModifiedDate;
         public string Author;

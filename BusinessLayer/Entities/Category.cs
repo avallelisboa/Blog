@@ -6,9 +6,15 @@ namespace BusinessLayer.Entities
 {
     public class Category : Entity
     {
-        public Category() : base("Category")
+        public Category() : base("Category"){}
+        public Category(int theId) : base("Category")
         {
-
+            Id = theId;
+        }
+        public Category(int theId, string theName) : base("Category")
+        {
+            Id = Id;
+            Name = theName;
         }
         public List<Post> Posts { get; private set; }
         public int Id { get; private set; }

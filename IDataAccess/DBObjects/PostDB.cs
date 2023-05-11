@@ -17,5 +17,7 @@ namespace IDataAccess.DBObjects
         public DateTime ModifiedDate { get; set; }
         public UserDB Author { get; set; }
         public List<PostCategoryDB> PostCategories { get; set; }
+        [NotMapped]
+        public List<CategoryDB> Categories { get; set; }
     }
 }

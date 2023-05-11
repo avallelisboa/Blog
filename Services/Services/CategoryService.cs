@@ -30,6 +30,12 @@ namespace Services.Services
                 };
             }
         }
+
+        public ActionResult getCategories()
+        {
+            throw new NotImplementedException();
+        }
+
         private ActionResult _addCategory(AddCategoryRequest theRequest)
         {
             ActionResult result = new ActionResult 

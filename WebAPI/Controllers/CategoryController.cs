@@ -18,11 +18,11 @@ namespace WebAPI.Controllers
         {
             _categoryService = theCategoryService;
         }
-        [HttpPost]
-        public IActionResult addCategory([FromBody]AddCategoryRequest req)
+        [HttpGet]
+        public IActionResult getCategories()
         {
-            var result = _categoryService.addCategory(req);
-            return Ok(result);
+            var categories = _categoryService.getCategories();
+            return Ok(categories);
         }
 
     }

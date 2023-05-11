@@ -15,7 +15,13 @@ namespace BusinessLayer.Factories
 
         public override Entity MakeValid(DBObject theObject)
         {
-            throw new NotImplementedException();
+            UserDB dbUser = (UserDB)theObject;
+            User aUser = new User(
+                dbUser.Id, dbUser.UserName, dbUser.Email, dbUser.Name,
+                dbUser.LastName, dbUser.Password, dbUser.Role
+            );          
+
+            return aUser;
         }
     }
 }

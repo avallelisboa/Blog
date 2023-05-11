@@ -35,6 +35,14 @@ namespace DataAccessLayer.DAOs
             }
         }
 
+        public List<UserDB> GetAll()
+        {
+            using (BlogDBContext db = new BlogDBContext())
+            {
+                return db.Users.ToList();
+            }
+        }
+
         public void Update(UserDB theObject)
         {
             using (BlogDBContext db = new BlogDBContext())

@@ -8,6 +8,7 @@ namespace IServices.DTOs.Request.Post
     {
         public string Title;
         public string Content;
-        public int CategoryId;
+        public List<int> CategoryIds;
+        public int userId;
     }
 }

@@ -35,6 +35,14 @@ namespace DataAccessLayer.DAOs
             }
         }
 
+        public List<CategoryDB> GetAll()
+        {
+            using (BlogDBContext db = new BlogDBContext())
+            {
+                return db.Categories.ToList();
+            }
+        }
+
         public void Update(CategoryDB theObject)
         {
             using (BlogDBContext db = new BlogDBContext())

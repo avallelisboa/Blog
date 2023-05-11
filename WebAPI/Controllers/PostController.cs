@@ -19,10 +19,22 @@ namespace WebAPI.Controllers
         {
             _postService = thePostService;
         }
-        [HttpPost]
-        public IActionResult addPost(AddPostRequest req)
+        [HttpGet]
+        public IActionResult getPostsBetweenDates(DateTime d1, DateTime d2)
         {
-            var result = _postService.makePost(req);
+            var result = _postService.getPostsBetweenDates(d1, d2);
+            return Ok(result);
+        }
+        [HttpGet]
+        public IActionResult getPostsByCategoryId(int categoryId)
+        {
+            var result = _postService.getPostsByCategoryId(categoryId);
+            return Ok(result);
+        }
+        [HttpGet]
+        public IActionResult getPostsByYear(int year)
+        {
+            var result = _postService.getPostsByYear(year);
             return Ok(result);
         }
     }

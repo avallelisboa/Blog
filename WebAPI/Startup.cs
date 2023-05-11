@@ -38,6 +38,7 @@ namespace WebAPI
             services.AddScoped<ISessionService, SessionService>();
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<ICategoryService, CategoryService>();
+
             services.AddScoped<IUserDAO, UserDAO>();
             services.AddScoped<IPostDAO, PostDAO>();
             services.AddScoped<ICategoryDAO, CategoryDAO>();
