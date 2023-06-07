@@ -9,6 +9,7 @@ namespace IServices.IServices
     public interface ICategoryService
     {
         ActionResult addCategory(AddCategoryRequest theRequest);
+        ActionResult getCategories(int postId);
         ActionResult getCategories();
     }
 }

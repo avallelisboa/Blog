@@ -176,5 +176,10 @@ namespace Services.Services
         {
             throw new NotImplementedException();
         }
+
+        public ActionResult updatePost(UpdatePostRequest req)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

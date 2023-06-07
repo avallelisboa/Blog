@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Entities;
+using IDataAccess.DBObjects;
 using IServices.DTOs.Response;
 using System;
 using System.Collections.Generic;
@@ -27,11 +28,27 @@ namespace IServices.Factories
                 message ="",
                 Id = post.Id,
                 Author = $"{post.Author.Name} {post.Author.LastName}",
-                Tittle = post.Tittle,
+                Title = post.Tittle,
                 Content = post.Content,
                 Categories = post.Categories.Select(c =>new CategoryResponse {Id = c.Id, Name = c.Name }).ToList(),
                 WrittenDate = post.WrittenDate,
                 ModifiedDate = post.ModifiedDate                
+            };
+        }
+
+        public override ActionResult makeValidDTO(DBObject theDBObject)
+        {
+            PostDB post = (PostDB)theDBObject;
+            return new PostResponse
+            {
+                isValid = true,
+                message = "",
+                Id = post.Id,
+                Author = post.Author.Name,
+                Title = post.Title,
+                Content = post.Content,
+                WrittenDate = post.WrittenDate,
+                ModifiedDate = post.ModifiedDate,
             };
         }
     }

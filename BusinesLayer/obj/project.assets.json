@@ -1468,19 +1468,6 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "BussinessLayer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "IDataAccess": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BussinessLayer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BussinessLayer.dll": {}
-        }
-      },
       "IDataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5634,11 +5621,6 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "BussinessLayer/1.0.0": {
-      "type": "project",
-      "path": "../BusinessLayer/BussinessLayer.csproj",
-      "msbuildProject": "../BusinessLayer/BussinessLayer.csproj"
-    },
     "IDataAccess/1.0.0": {
       "type": "project",
       "path": "../IDataAccess/IDataAccess.csproj",
@@ -5647,7 +5629,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "BussinessLayer >= 1.0.0"
+      "IDataAccess >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5657,11 +5639,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IServices\\IServices.csproj",
-      "projectName": "IServices",
-      "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IServices\\IServices.csproj",
+      "projectUniqueName": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BusinessLayer.csproj",
+      "projectName": "BusinessLayer",
+      "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\avall\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IServices\\obj\\",
+      "outputPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5681,8 +5663,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BussinessLayer.csproj": {
-              "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BussinessLayer.csproj"
+            "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IDataAccess\\IDataAccess.csproj": {
+              "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\IDataAccess\\IDataAccess.csproj"
             }
           }
         }

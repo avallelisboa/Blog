@@ -1,0 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/backoffice/node_modules
+/backoffice/.pnp
+/backoffice.pnp.js
+
+# testing
+/backoffice/coverage
+
+# production
+/backoffice/build
+
+# misc
+/backoffice.DS_Store
+/backoffice.env.local
+/backoffice.env.development.local
+/backoffice.env.test.local
+/backoffice.env.production.local
+
+/backofficenpm-debug.log*
+/backofficeyarn-debug.log*
+/backofficeyarn-error.log*
+
+/Blog/bin/
+/Blog/obj/
+/BusinessLayer/bin/
+/BusinessLayer/obj/
+/DataAccessLayer/bin/
+/DataAccessLayer/obj/
+/IDataAccessLayer/bin/
+/IDataAccessLayer/obj/
+/Services/bin/
+/Services/obj/
+/IServices/bin/
+/IServices/obj/
+/Testing/bin/
+/Testing/obj/
+/WebAPI/bin/
+/WebAPI/obj/

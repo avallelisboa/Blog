@@ -4,12 +4,12 @@
     "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BussinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BusinessLayer.csproj",
-        "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BussinessLayer.csproj",
+        "projectName": "BussinessLayer",
+        "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BussinessLayer.csproj",
         "packagesPath": "C:\\Users\\avall\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
@@ -226,8 +226,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BussinessLayer.csproj": {
+                "projectPath": "C:\\Users\\avall\\Documents\\Andrés\\Programación\\Code\\Blog\\BusinessLayer\\BussinessLayer.csproj"
               }
             }
           }

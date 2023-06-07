@@ -7,7 +7,7 @@ namespace IServices.DTOs.Response
     public class PostResponse : ActionResult
     {
         public int Id;
-        public string Tittle;
+        public string Title;
         public string Content;
         public List<CategoryResponse> Categories;
         public DateTime WrittenDate;

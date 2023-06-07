@@ -7,6 +7,6 @@ namespace IDataAccess.IDAOs
 {
     public interface ICategoryDAO : IDAO<CategoryDB>
     {
-
+        List<CategoryDB> GetCategoriesByPostId(int postId);
     }
 }

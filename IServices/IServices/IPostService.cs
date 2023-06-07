@@ -14,7 +14,7 @@ namespace IServices.IServices
         ActionResult getPostsBetweenDates(DateTime d1, DateTime d2);
         ActionResult getPostsByYear(int year);
         ActionResult getPostsByCategoryId(int categoryId);
-        ActionResult updatePost();
+        ActionResult updatePost(UpdatePostRequest req);
         ActionResult deletePost(int id);
     }
 }

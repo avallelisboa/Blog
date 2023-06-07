@@ -43,6 +43,28 @@ namespace DataAccessLayer.DAOs
             }
         }
 
+        public List<CategoryDB> GetCategoriesByPostId(int postId)
+        {
+            using (BlogDBContext db = new BlogDBContext())
+            {
+                return db.Categories.Join(
+                    db.PostsCategories,
+                    cat => cat.Id,
+                    postcat => postcat.CategoryId,
+                    (cat, postcat) => new
+                    {
+                        CategoryId = cat.Id,
+                        CategoryName = cat.Name,
+                        PostId = postcat.PostId,
+                    }).Where(postcat => postcat.PostId == postId)
+                    .Select(postcat => new CategoryDB
+                    {
+                        Id = postcat.CategoryId,
+                        Name = postcat.CategoryName
+                    }).ToList();
+            }
+        }
+
         public void Update(CategoryDB theObject)
         {
             using (BlogDBContext db = new BlogDBContext())

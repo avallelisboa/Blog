@@ -1,6 +1,7 @@
 ﻿using IDataAccess.IDAOs;
 using IServices.DTOs.Request.Category;
 using IServices.DTOs.Response;
+using IServices.Factories;
 using IServices.IServices;
 using System;
 using System.Collections.Generic;
@@ -23,17 +24,31 @@ namespace Services.Services
             }
             catch(Exception ex)
             {
-                return new ActionResult
-                {
-                    isValid = false,
-                    message = ex.Message
-                };
+                return CategoryDTOFactory.GetInstance().makeInvalidDTO(ex);
             }
         }
 
-        public ActionResult getCategories()
+        public ActionResult getCategories(int postId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _getCategories(postId);
+            }
+            catch(Exception ex)
+            {
+                return CategoryDTOFactory.GetInstance().makeInvalidDTO(ex);
+            }
+        }
+        private ActionResult _getCategories(int postId)
+        {
+            ActionResult result = new ActionResult
+            {
+                isValid = false,
+                message = ""
+            };
+            var categories = _categoryDAO.GetCategoriesByPostId(postId);
+
+            return result;
         }
 
         private ActionResult _addCategory(AddCategoryRequest theRequest)
@@ -46,6 +61,11 @@ namespace Services.Services
 
 
             return result;
+        }
+
+        public ActionResult getCategories()
+        {
+            throw new NotImplementedException();
         }
     }
 }

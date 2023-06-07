@@ -1496,17 +1496,17 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "BusinessLayer/1.0.0": {
+      "BussinessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "IDataAccess": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/BusinessLayer.dll": {}
+          "bin/placeholder/BussinessLayer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BusinessLayer.dll": {}
+          "bin/placeholder/BussinessLayer.dll": {}
         }
       },
       "DataAccessLayer/1.0.0": {
@@ -1540,7 +1540,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "BusinessLayer": "1.0.0"
+          "BussinessLayer": "1.0.0"
         },
         "compile": {
           "bin/placeholder/IServices.dll": {}
@@ -5744,10 +5744,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "BusinessLayer/1.0.0": {
+    "BussinessLayer/1.0.0": {
       "type": "project",
-      "path": "../BusinessLayer/BusinessLayer.csproj",
-      "msbuildProject": "../BusinessLayer/BusinessLayer.csproj"
+      "path": "../BusinessLayer/BussinessLayer.csproj",
+      "msbuildProject": "../BusinessLayer/BussinessLayer.csproj"
     },
     "DataAccessLayer/1.0.0": {
       "type": "project",
